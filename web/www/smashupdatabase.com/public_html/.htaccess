@@ -1,0 +1,7 @@
+DirectoryIndex Default.php
+
+# Deny access to .htaccess
+<Files .htaccess>
+Order allow,deny
+Deny from all
+</Files>

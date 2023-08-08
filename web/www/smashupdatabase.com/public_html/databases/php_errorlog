@@ -1,0 +1,47 @@
+[10-Jan-2020 11:17:09 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/smashupdatabase.com/public_html/databases/init_logins.php on line 17
+[10-Jan-2020 11:17:11 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/smashupdatabase.com/public_html/databases/init_logins.php on line 17
+[10-Jan-2020 11:17:12 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/smashupdatabase.com/public_html/databases/init_logins.php on line 17
+[10-Jan-2020 11:17:15 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/smashupdatabase.com/public_html/databases/init_logins.php on line 17
+[10-Jan-2020 11:17:38 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/smashupdatabase.com/public_html/databases/init_logins.php on line 17
+[10-Jan-2020 11:17:40 CST6CDT] PHP Parse error:  syntax error, unexpected 'if' (T_IF) in /home/customer/www/smashupdatabase.com/public_html/databases/init_logins.php on line 17
+[10-Jan-2020 11:18:49 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /home/customer/www/smashupdatabase.com/public_html/databases/init_logins.php on line 20
+[10-Jan-2020 11:21:22 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_error() in /home/customer/www/smashupdatabase.com/public_html/databases/init_logins.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/smashupdatabase.com/public_html/databases/init_logins.php on line 21
+[13-Jan-2020 11:16:42 CST6CDT] PHP Parse error:  syntax error, unexpected '$conn' (T_VARIABLE) in /home/customer/www/smashupdatabase.com/public_html/databases/init_logins.php on line 45
+[13-Jan-2020 11:16:45 CST6CDT] PHP Parse error:  syntax error, unexpected '$conn' (T_VARIABLE) in /home/customer/www/smashupdatabase.com/public_html/databases/init_logins.php on line 45
+[13-Jan-2020 11:16:45 CST6CDT] PHP Parse error:  syntax error, unexpected '$conn' (T_VARIABLE) in /home/customer/www/smashupdatabase.com/public_html/databases/init_logins.php on line 45
+[13-Jan-2020 11:16:58 CST6CDT] PHP Parse error:  syntax error, unexpected '$conn' (T_VARIABLE) in /home/customer/www/smashupdatabase.com/public_html/databases/init_logins.php on line 45
+[13-Jan-2020 11:18:19 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/customer/www/smashupdatabase.com/public_html/databases/init_logins.php on line 48
+[19-Jan-2020 11:34:56 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_array() in /home/customer/www/smashupdatabase.com/public_html/databases/get_emails.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/smashupdatabase.com/public_html/databases/get_emails.php on line 15
+[19-Jan-2020 11:36:37 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/customer/www/smashupdatabase.com/public_html/databases/get_emails.php on line 16
+[19-Jan-2020 11:41:08 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_array() in /home/customer/www/smashupdatabase.com/public_html/databases/get_emails.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/smashupdatabase.com/public_html/databases/get_emails.php on line 15
+[19-Jan-2020 11:41:08 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function mysql_fetch_array() in /home/customer/www/smashupdatabase.com/public_html/databases/get_emails.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/smashupdatabase.com/public_html/databases/get_emails.php on line 15
+[19-Jan-2020 11:41:14 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function mysqld_fetch_array() in /home/customer/www/smashupdatabase.com/public_html/databases/get_emails.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/smashupdatabase.com/public_html/databases/get_emails.php on line 15
+[19-Jan-2020 11:41:23 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function mysqlu_fetch_array() in /home/customer/www/smashupdatabase.com/public_html/databases/get_emails.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/smashupdatabase.com/public_html/databases/get_emails.php on line 15
+[19-Jan-2020 11:42:33 CST6CDT] PHP Recoverable fatal error:  Object of class mysqli_result could not be converted to string in /home/customer/www/smashupdatabase.com/public_html/databases/get_emails.php on line 14
+[19-Jan-2020 11:42:44 CST6CDT] PHP Fatal error:  Uncaught Error: Cannot use object of type mysqli_result as array in /home/customer/www/smashupdatabase.com/public_html/databases/get_emails.php:14
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/smashupdatabase.com/public_html/databases/get_emails.php on line 14
+[19-Jan-2020 11:43:31 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/customer/www/smashupdatabase.com/public_html/databases/get_emails.php on line 17
+[20-Jan-2020 20:18:32 CST6CDT] PHP Parse error:  syntax error, unexpected '}', expecting ']' in /home/customer/www/smashupdatabase.com/public_html/databases/display_games.php on line 20
+[24-Jan-2020 21:26:51 CST6CDT] PHP Parse error:  syntax error, unexpected '"; "' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/customer/www/smashupdatabase.com/public_html/databases/display_emails.php on line 18
+[02-Feb-2020 12:00:00 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/customer/www/smashupdatabase.com/public_html/databases/edit_games.php on line 21
+[02-Feb-2020 12:02:12 CST6CDT] PHP Parse error:  syntax error, unexpected 'row' (T_STRING), expecting ',' or ';' in /home/customer/www/smashupdatabase.com/public_html/databases/edit_games.php on line 17

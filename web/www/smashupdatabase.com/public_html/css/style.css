@@ -1,0 +1,777 @@
+/****************************
+THIS IS THE MASTER STYLE SHEET
+
+TABLE OF CONTENTS
+    1. Fonts & Root
+    2. Body
+    3. Navbar
+    4. Boxes
+    5. Headers
+    6. Paragraphs and Links
+    7. Inputs
+    8. Buttons
+    9. Media Queries
+        9.1 Media Query (max-width: 57em)
+        9.2 Media Query (max-width: 45em)
+    10. General Utilities
+****************************/
+
+
+
+
+
+/******************
+1. Fonts & Root
+******************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --clr-white: #fff;
+    --clr-teal: #17F5E8;
+    --clr-scheme-1: #F2F2F2;
+    --clr-scheme-2: #65CCB8; /* original: 65CCB8 */
+    --clr-scheme-3: #57BA98;
+    --clr-scheme-4: #3B945E;
+    --clr-scheme-5: #182628;
+
+    --clr-scheme-1a: #eeeeee;
+    --clr-scheme-1b: #e0e0e0;
+    --clr-scheme-5a: #4d6366;
+}
+
+
+
+
+
+/*************
+2. Body
+*************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14pt;
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--clr-scheme-2);
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    width: min(90%, 65rem);
+    max-width: 100%;
+}
+
+
+
+
+
+/*************
+3. Navbar
+*************/
+
+header {
+    background-color: var(--clr-scheme-3);
+    margin-bottom: 1rem;
+    width: 100%;
+    position: fixed;
+    z-index: 9999;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li a,
+.dropdown-link a {
+    text-decoration: none;
+    color: var(--clr-scheme-5);
+    opacity: 0.85;
+    position: relative;
+    z-index: 500;
+}
+
+.--header-container {
+    margin-bottom: 0;
+}
+
+.toggle {
+    display: none;
+    position: relative;
+    left: 1.25em;
+    top: 2.25em;
+}
+
+.toggle:checked ~ nav {
+    transform: scale(1,1);
+}
+
+.toggle-label {
+    display: none;
+}
+
+li a:hover {
+    opacity: 1;
+}
+
+.dropdown-content a::before,
+li a::before {
+    content: '';
+    height: 3px;
+    width: 100%;
+    background: black;
+    display: inline-block;
+    position: absolute;
+    top: 1.3rem;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: transform ease-in-out 250ms;
+}
+
+.dropdown-content a:hover::before,
+li a:hover::before {
+    transform: scale(1,1);
+}
+
+nav {
+    float: right;
+    background: var(--clr-scheme-3);
+}
+
+nav li {
+    display: inline;
+    padding: 0 .5rem;
+}
+
+nav ul {
+    padding: 1rem;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    width: 10rem;
+}
+
+.dropdown-content a {
+    margin-top: 2rem;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-link {
+    padding-top: 1rem;
+    padding-bottom: .25rem;
+    background-color: var(--clr-scheme-3);
+}
+
+
+/**************
+4. Boxes
+***************/
+
+.infobox h3,
+.infobox h4 {
+    color: var(--clr-white);
+}
+
+.loginbox {
+    max-width: 30rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.infobox {
+    background-color: var(--clr-scheme-4);
+    padding: 3em 1.5em;
+    box-shadow: 0 0 1em rgba(0, 0, 0, .25);
+    margin: 0 1em 1em;
+    flex-basis: 100%;
+    flex-grow: 1;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+.-infobox-hover:hover {
+    box-shadow: 0 0 1em rgba(0, 0, 0, .5);
+}
+
+a.--infobox-link {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    top: 0;
+    left: 0;
+}
+
+.statbox {
+    padding: 1.5em .75em;
+    margin: 0 .5em 1em;
+}
+
+.playerbox {
+    padding: 1.5em 1.5em;
+    max-width: 17em;
+    min-width: 14em;
+}
+
+.split {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.accountbox h4 {
+    margin-bottom: .5rem;
+}
+
+
+
+
+/***********
+5. Headers
+************/
+
+h1,
+h3,
+h4 {
+    text-align: center;
+    letter-spacing: .05em;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--clr-scheme-5);
+}
+
+
+h3 {
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    font-weight: 800;
+}
+
+.statbox h4 {
+    margin-bottom: .25em;
+}
+
+.header-left {
+    text-align: left;
+}
+
+.subtitle {
+    text-transform: uppercase;
+    color: var(--clr-scheme-1);
+    margin-bottom: 1rem;
+}
+
+.games-played-box {
+    margin-top: 1rem;
+}
+
+
+
+
+
+/**********************
+6. Paragraphs and links
+**********************/
+
+p {
+    font-weight: 900;
+    color: var(--clr-scheme-1);
+}
+
+.p-proper {
+    line-height: 1.69rem;
+}
+
+.stat-text li {
+    color: var(--clr-scheme-1);
+}
+
+.stat-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ranking {
+    font-size: .9rem;
+    color: var(--clr-scheme-1b);
+}
+
+.p-stats {
+    padding-left: 1em;
+    min-width: 11.5rem;
+    margin-bottom: .15em;
+}
+
+.stats {
+    padding-right: 2em;
+    float: right;
+}
+
+.small {
+    font-size: .9em;
+}
+
+.center {
+    text-align: center;
+}
+
+.bottom {
+    margin-bottom: .25em;
+}
+
+.link-container {
+    text-align: center;
+    margin-bottom: .66rem;
+}
+
+.link-login,
+.link-account {
+    margin-bottom: .66rem;
+}
+
+.link-login {
+    color: var(--clr-scheme-1a);
+    text-decoration: none;
+}
+
+.link-login:hover,
+.link-account:hover {
+    text-decoration: underline;
+}
+
+.link-account {
+    color: var(--clr-white);
+}
+
+.span-light {
+    color: var(--clr-scheme-1a);
+}
+
+.code {
+    background-color: var(--clr-scheme-1);
+    color: var(--clr-scheme-4);
+    letter-spacing: .25rem;
+}
+
+h4 a,
+p a {
+    color: var(--clr-scheme-1);
+}
+
+
+
+
+
+/************
+7. Inputs
+************/
+
+.big-select {
+    margin-top: 1.5rem;
+    min-width: 15rem;
+    height: 3rem;
+    font-size: 1.25rem;
+}
+
+.input-login {
+    display: block;
+    margin: 0 auto 1rem;
+    height: 2.5rem;
+    max-width: 20rem;
+    font-size: 1.5rem;
+    background-color: var(--clr-scheme-1);
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    border-radius: 1rem;
+
+    border: 1px solid var(--clr-scheme-2);;
+
+    padding-left: .75rem;
+}
+
+.input-login:focus {
+    outline: none;
+    border: 1px var(--clr-scheme-5);
+    color: var(--clr-scheme-5);
+}
+
+.input-login-label {
+    display: block;
+    margin: 0 auto .5rem;
+    text-align: center;
+    color: var(--clr-scheme-1a);
+    border-radius: 25px;
+    
+}
+
+select {
+    display: block;
+    margin: 0 auto;
+    width: 10em;
+    background-color: var(--clr-scheme-4);
+    color: var(--clr-scheme-1);
+    border-color: var(--clr-scheme-5);
+}
+
+.select_factions {
+    margin-bottom: 1em;
+}
+
+.select_factions select {
+    display: inline-block;
+}
+
+.create-checkbox-label {
+    text-align: center;
+    display: block;
+    margin-bottom: .5rem;
+    color: var(--clr-scheme-1a);
+}
+
+.graph-checkbox-label {
+    font-size: .85rem;
+    color: var(--clr-scheme-1a);
+}
+
+.graph-checkbox {
+    width: .7rem;
+    height: .7rem;
+}
+
+.graph-checkbox-label-expansion {
+    font-size: .95rem;
+    color: var(--clr-scheme-1);
+}
+
+.graph-checkbox-expansion {
+    width: .8rem;
+    height: .8rem;
+}
+
+expansion-group {
+    margin-bottom: .5rem;
+}
+
+
+/*
+fancy slider
+*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-bottom: 1em;
+}
+  
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--clr-scheme-4);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: var(--clr-scheme-2);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+  
+input:checked + .slider {
+    background-color: var(--clr-scheme-4);
+}
+  
+input:focus + .slider {
+    box-shadow: 0 0 1px var(--clr-scheme-4);
+}
+  
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+  
+.slider.round {
+    border-radius: 34px;
+}
+  
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+.graph {
+    background-color: var(--clr-scheme-2);
+}
+
+.graph:before {
+    background-color: var(--clr-scheme-4);
+}
+
+input:checked + .graph {
+    background-color: var(--clr-scheme-2);
+}
+  
+input:focus + .graph {
+    box-shadow: 0 0 1px var(--clr-scheme-2);
+}
+
+
+
+
+
+/************
+8. Buttons
+************/
+
+.submit_button {
+    font-size: 2rem;
+    background-color: var(--clr-scheme-4);
+    color: var(--clr-scheme-1);
+    height: 4.2rem;
+    width: 11rem;
+}
+
+.submit_button_off {
+    opacity: .5;
+}
+
+.submit-button-login {
+    display: block;
+    margin: 2rem auto 1rem;
+    height: 3rem;
+    width: 7rem;
+    background-color: var(--clr-scheme-1);
+    font-size: 1.25rem;
+}
+
+
+
+
+
+/****************
+9. Media Queries
+****************/
+
+/*******************************
+9.1 Media Query (max-width: 57em)
+*******************************/
+
+@media (max-width: 57em) {
+    /* infoboxes */
+    .split {
+        flex-direction: column;
+    }
+
+    .infobox {
+        margin: 0 .5em 1em;
+    }
+
+    .stat-text-container {
+        flex-direction: row;
+    }
+
+    .stat-text {
+        margin: 0 1rem;
+    }
+
+    /* nav bar stuff */
+    
+    header {
+        padding-bottom: .5em;
+    }
+    
+    .logo-container {
+        width: 100px;
+        height: 50px;
+        float: none;
+        display: block;
+        margin: auto;
+    }
+
+    .toggle-label {
+        position: absolute;
+        left: 1.25em;
+        top: 1.5em;
+        display: block;
+        height: 100%;
+    }
+
+    .toggle-label span,
+    .toggle-label span::before,
+    .toggle-label span::after {
+        display: block;
+        background: var(--clr-scheme-1);
+        height: 3px;
+        width: 1.75em;
+        border-radius: 2px;
+        position: relative;
+        z-index: 9999;
+    }
+
+    .toggle-label span::before,
+    .toggle-label span::after {
+        content: '';
+        position: absolute;
+    }
+
+    .toggle-label span::before {
+        bottom: 7px;
+    }
+
+    .toggle-label span::after {
+        top: 7px;
+    }
+
+    nav {
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        transform: scale(1,0);
+    }
+    
+    nav ul {
+        padding: 0;
+    }
+
+    nav li {
+        display: flex;
+        align-items: center;
+        margin-bottom: .75em;
+        margin-left: 1.25rem;
+        font-size: 1.25em;
+    }
+
+    .games-played-box {
+        margin-top: 0;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: none;
+    }
+
+}
+
+
+
+
+
+/******************
+9.2 Media Query (max-width: 45em)
+*********************/
+@media (max-width: 45em) {
+    .stat-text-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .p-stats {
+        min-width: 15rem;
+    }
+
+    .big-select {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+/*********************
+10. General Utilities
+*********************/
+.spacer {
+    height: 80px;
+}
+
+#error-message {
+    color: red;
+}
+
+.margin-below {
+    margin-bottom: 1em;
+}
+
+/*********************
+10. Table
+*********************/
+table {
+    width: 100%;
+    height: 50px;
+    overflow: auto;
+}
+
+
+.top-row {
+    color: var(--clr-white);
+    border: 1px solid black;
+}
+
+.regular-row {
+    color: var(--clr-scheme-1);
+    border: 1px solid black;
+}
+
+.thing {
+    width: 7.5rem;
+}
+
+th {
+    padding: .5rem 0;
+}

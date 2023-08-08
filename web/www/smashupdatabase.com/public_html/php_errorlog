@@ -1,0 +1,4 @@
+[09-Aug-2020 20:40:11 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function sidebarHeader() in /home/customer/www/smashupdatabase.com/public_html/Default.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/smashupdatabase.com/public_html/Default.php on line 19

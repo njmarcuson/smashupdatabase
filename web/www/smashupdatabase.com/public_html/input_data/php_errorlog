@@ -1,0 +1,46 @@
+[20-Jan-2020 12:16:34 CST6CDT] PHP Parse error:  syntax error, unexpected 'die' (T_EXIT), expecting ',' or ';' in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php on line 8
+[20-Jan-2020 12:27:25 CST6CDT] PHP Parse error:  syntax error, unexpected '$sql' (T_VARIABLE) in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php on line 46
+[20-Jan-2020 12:39:55 CST6CDT] PHP Parse error:  syntax error, unexpected '"awesome"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php on line 67
+[20-Jan-2020 12:40:19 CST6CDT] PHP Parse error:  syntax error, unexpected '"awesome"' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php on line 67
+[20-Jan-2020 12:41:16 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php on line 83
+[20-Jan-2020 12:57:10 CST6CDT] PHP Parse error:  syntax error, unexpected '{', expecting ')' in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php on line 94
+[20-Jan-2020 13:01:51 CST6CDT] PHP Parse error:  syntax error, unexpected 'null' (T_STRING), expecting ',' or ';' in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php on line 104
+[20-Jan-2020 18:56:13 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php on line 156
+[20-Jan-2020 18:57:18 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php on line 156
+[20-Jan-2020 19:40:46 CST6CDT] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting '-' or identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data3.php on line 3
+[24-Jan-2020 10:42:51 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data_random.php on line 11
+[24-Jan-2020 10:54:28 CST6CDT] PHP Parse error:  syntax error, unexpected '(', expecting variable (T_VARIABLE) or '{' or '$' in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data_random.php on line 102
+[24-Jan-2020 10:57:43 CST6CDT] PHP Parse error:  syntax error, unexpected '$i' (T_VARIABLE), expecting '(' in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data_random.php on line 146
+[24-Jan-2020 11:13:06 CST6CDT] PHP Parse error:  syntax error, unexpected ')' in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data3.php on line 23
+[24-Jan-2020 14:26:32 CST6CDT] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data3.php on line 118
+[05-Feb-2020 10:59:48 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function getExpansions2Factions() in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php:122
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php on line 122
+[07-Feb-2020 22:52:40 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function expansion2Factions() in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data_random.php:81
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data_random.php on line 81
+[08-Feb-2020 00:06:23 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function expansion2Factions() in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data_random.php:81
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data_random.php on line 81
+[06-Mar-2020 15:13:47 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function getExpansions2FactionsTitans() in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php on line 50
+[06-Mar-2020 15:14:29 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function getExpansions2FactionsTitans() in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php on line 50
+[06-Mar-2020 15:14:32 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function getExpansions2FactionsTitans() in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php:50
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data2.php on line 50
+[06-Jul-2020 14:24:20 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data3.php on line 166
+[06-Jul-2020 14:25:16 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data3.php on line 166
+[06-Jul-2020 14:25:39 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/customer/www/smashupdatabase.com/public_html/input_data/input_data3.php on line 166
+[11-Aug-2020 12:57:44 CST6CDT] PHP Fatal error:  Uncaught Error: Call to undefined function sidebarHeader() in /home/customer/www/smashupdatabase.com/public_html/su/input_data/input_data_bad.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/customer/www/smashupdatabase.com/public_html/su/input_data/input_data_bad.php on line 12

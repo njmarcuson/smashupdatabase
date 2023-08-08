@@ -1,0 +1,4 @@
+[22-Jan-2020 11:16:00 CST6CDT] PHP Parse error:  syntax error, unexpected '<' in /home/customer/www/smashupdatabase.com/public_html/random/random_decision.php on line 104
+[22-Jan-2020 11:16:11 CST6CDT] PHP Parse error:  syntax error, unexpected '<' in /home/customer/www/smashupdatabase.com/public_html/random/random_decision.php on line 104
+[22-Jan-2020 11:25:50 CST6CDT] PHP Parse error:  syntax error, unexpected '"Factions:"' (T_CONSTANT_ENCAPSED_STRING), expecting ',' or ';' in /home/customer/www/smashupdatabase.com/public_html/random/random_decision.php on line 112
+[06-Mar-2020 15:35:09 CST6CDT] PHP Parse error:  syntax error, unexpected '}' in /home/customer/www/smashupdatabase.com/public_html/random/random_decision.php on line 128

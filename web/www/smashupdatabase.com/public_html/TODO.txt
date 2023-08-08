@@ -1,0 +1,15 @@
+*************
+** BACKEND **
+*************
+
+UserEditor (extends User)
+
+GameAdder (extends User)
+
+**************
+** FRONTEND **
+**************
+
+make the three bars instead of checkbox
+
+work on the input games page
